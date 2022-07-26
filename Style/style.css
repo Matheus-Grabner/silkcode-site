@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Varela Round', sans-serif;
+    color: rgb(56, 55, 55);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    color:rgb(17, 17, 17);
+}
+
+.cabecalho-titulo {
+    font-size: 33px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+    color: rgba(75,0,130);
+}
+
+.cabecalho-menu-item {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.conteudo {
+    border-top: 0.4px solid #4B0082;
+    margin-bottom: 48px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 200px;
+    padding-top: 38px;
+}
+
+.conteudo-principal-subtitulo{ 
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(65, 64, 64);
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 75px;
+    height: 600px;
+    width: 900px;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-weight: 300;
+    font-size: 64px;
+    color: rgb(41, 40, 40);;
+}
+
+.conteudo-princial-escrito-subtitulo{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.conteudo-principal-escrito-botao{
+    background: linear-gradient(to right, #4B0082, #9370DB);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(147,112,219);
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes botao {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+.conteudo-principal-imagem{
+    float: right;
+    width: 700px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 72px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #4B0082;
+    padding-top: 48px;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.conteudo-principal-paragrafo {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #4B0082;
+}
+
+.span-cor{
+    color: #4B0082;
+}
+
+.lista-pai{
+    margin-left: 35px;
+    font-size: 18.5px;
+    list-style: none;
+}
+
+.lista-filho{
+     margin-top: 5px;
+}
+
+.botao-contato{
+    background: linear-gradient(to right, #4B0082, #9370DB);
+    width: 75px;
+    height: 25px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(147,112,219);
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.botao-contato:hover{
+    animation-name: botao;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}

@@ -116,7 +116,9 @@ button:hover{
 
 .conteudo-principal-imagem{
     float: right;
-    width: 700px;
+    width: 750px;
+    margin-top: -55px;
+    margin-left: -100px;
 }
 
 .conteudo-secundario {

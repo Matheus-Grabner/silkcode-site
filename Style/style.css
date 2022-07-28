@@ -38,6 +38,8 @@ body {
 .cabecalho-menu-item {
     font-size: 18px;
     font-weight: bold;
+    list-style: none;
+    text-decoration: none;
 }
 
 .conteudo {

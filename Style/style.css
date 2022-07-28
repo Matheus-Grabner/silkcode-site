@@ -282,9 +282,40 @@ footer{
         width: 50%;
         margin-bottom: 30px;
     }
+
+    .cabecalho {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .conteudo-principal {
+        width: 100%;
+        margin-left: 90px;
+        margin-bottom: -140px;
+    }
+
+    .conteudo-principal-imagem {
+        width: 0px;
+    }
 }
+
 @media (max-width:600px) {
     .footer-col{
-        width: 100%;
+        width: 130%;
+    }
+
+    .cabecalho {
+        width: 105%;
+        margin-bottom: 0px;
+    }
+
+    .conteudo-principal {
+        width: 70%;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .conteudo-principal-imagem {
+        width: 0px;
     }
 }

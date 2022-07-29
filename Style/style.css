@@ -331,24 +331,45 @@ footer{
         width: 100%;
     }
 
+    .cabecalho-titulo {
+        font-size: 25px;
+    }
+
     .cabecalho-menu-item {
-        font-size: 16px;
+        font-size: 13px;
+        text-align: center;
     }
 
     .conteudo-principal {
         width: 65%;
-        margin-bottom: 300px;
+        margin-bottom: 200px;
         text-align: center;
         margin-left: 15px;
     }
 
+    .conteudo-principal-escrito-titulo {
+        font-size: 50px;
+    }
+
+    .conteudo-principal-subtitulo {
+        font-size: 17px;
+        padding: 15px;
+        font-weight: 200;
+    }
+
     .lista-filho {
-        margin-bottom: 20px;
-        font-size: 18px;
+        font-size: 16px;
         margin-left: -10%;
+        padding: 5px;
     }
 
     .conteudo-secundario {
         text-align: center;
+        padding: 30px;
     }
+
+    .conteudo-secundario-titulo {
+        
+    }
+    
 }

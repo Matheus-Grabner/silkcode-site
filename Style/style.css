@@ -319,3 +319,36 @@ footer{
         width: 0px;
     }
 }
+
+
+
+@media (max-width:375px) {
+    .footer-col {
+        width: 50%;
+    }
+
+    .cabecalho {
+        width: 100%;
+    }
+
+    .cabecalho-menu-item {
+        font-size: 16px;
+    }
+
+    .conteudo-principal {
+        width: 65%;
+        margin-bottom: 300px;
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .lista-filho {
+        margin-bottom: 20px;
+        font-size: 18px;
+        margin-left: -10%;
+    }
+
+    .conteudo-secundario {
+        text-align: center;
+    }
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@
 body {
     font-size: 100%;
     background-color: rgb(255, 255, 255);
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     color: rgb(56, 55, 55);
 }
 
@@ -65,14 +65,15 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 200px;
-    padding-top: 38px;
+    margin-left: 230px;
+    padding-top: 60px;
 }
 
 .conteudo-principal-subtitulo {
     font-size: 18px;
     font-weight: 550;
     color: rgb(65, 64, 64);
+    margin-left: 18px;
 }
 
 .conteudo-principal-escrito {
@@ -96,19 +97,20 @@ body {
 }
 
 .conteudo-principal-escrito-botao {
-    background: linear-gradient(to right, #4B0082, #9370DB);
+    /* linear-gradient(to right, #4B0082, #9370DB) */
+    background: rgba(147, 112, 219);
     width: 180px;
     height: 60px;
     border: none;
-    box-shadow: 4px 5px 4px rgba(147, 112, 219);
+    /* box-shadow: 4px 5px 4px rgba(147, 112, 219); */
     border-radius: 20px;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 14px;
     color: white;
     cursor: pointer;
 }
 
-button:hover {
+/* button:hover {
     animation-name: botao;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
@@ -124,13 +126,13 @@ button:hover {
     100% {
         transform: scale(1.05);
     }
-}
+} */
 
 .conteudo-principal-imagem {
     float: right;
     width: 750px;
     margin-top: -55px;
-    margin-left: -100px;
+    margin-left: -200px;
 }
 
 .conteudo-secundario {
@@ -164,13 +166,13 @@ button:hover {
 }
 
 .lista-pai {
-    margin-left: 35px;
+    margin-left: 18px;
     font-size: 17px;
     list-style: none;
 }
 
 .lista-filho {
-    margin-top: 9px;
+    margin-top: 18px;
 }
 
 .botao-contato {
@@ -317,6 +319,7 @@ footer {
 
     .conteudo-principal-escrito-titulo {
         font-size: 50px;
+        font-weight: bold;
     }
 
     .conteudo-principal-subtitulo {

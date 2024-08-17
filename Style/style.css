@@ -65,7 +65,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 230px;
+    margin-left: 200px;
     padding-top: 60px;
 }
 
@@ -130,9 +130,9 @@ body {
 
 .conteudo-principal-imagem {
     float: right;
-    width: 750px;
+    width: 800px;
     margin-top: -55px;
-    margin-left: -200px;
+    margin-right: 200px;
 }
 
 .conteudo-secundario {
@@ -162,7 +162,7 @@ body {
 }
 
 .span-cor {
-    color: #4B0082;
+    color: rgba(147, 112, 219);
 }
 
 .lista-pai {
@@ -176,14 +176,14 @@ body {
 }
 
 .botao-contato {
-    background: linear-gradient(to right, #4B0082, #9370DB);
-    width: 75px;
+    background: rgba(147, 112, 219);
+    width: 85px;
     height: 25px;
     border: none;
-    box-shadow: 4px 5px 4px rgba(147, 112, 219);
+    /* box-shadow: 4px 5px 4px rgba(147, 112, 219); */
     border-radius: 20px;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 14px;
     color: white;
     cursor: pointer;
 }
@@ -314,7 +314,6 @@ footer {
         width: 65%;
         margin-bottom: 200px;
         text-align: center;
-        margin-left: 15px;
     }
 
     .conteudo-principal-escrito-titulo {

@@ -1,11 +1,11 @@
 // Pegue o modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Pegue o botão que abre o modal
-var btn = document.getElementById("openModal");
+let btn = document.getElementById("openModal");
 
 // Pegue o elemento <span> que fecha o modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // Quando o usuário clicar no botão, abre o modal 
 btn.onclick = function() {

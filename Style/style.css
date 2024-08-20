@@ -408,10 +408,13 @@ button[type="submit"] {
     transition: background-color 0.3s ease;
     width: 100%; /* O botão ocupa toda a largura */
     margin-top: 10px; /* Espaçamento entre o botão e o campo de telefone */
+    font-weight: bold;
 }
 
 button[type="submit"]:hover {
-    background-color: #6A5ACD; /* Cor mais clara ao passar o mouse */
+    background-color: white; /* Cor mais clara ao passar o mouse */
+    color: #483D8B;
+    /* font-size: 100px; */
 }
 
 /* Estilos para o botão de fechar */

@@ -384,7 +384,7 @@ label {
 input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 3px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -409,11 +409,13 @@ button[type="submit"] {
     width: 100%; /* O botão ocupa toda a largura */
     margin-top: 10px; /* Espaçamento entre o botão e o campo de telefone */
     font-weight: bold;
+    margin-top: 5px;
 }
 
 button[type="submit"]:hover {
     background-color: white; /* Cor mais clara ao passar o mouse */
     color: #483D8B;
+    font-weight: bold;
     /* font-size: 100px; */
 }
 

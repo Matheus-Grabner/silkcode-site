@@ -23,3 +23,30 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// Capturar o formulário
+let form = document.getElementById("tabela");
+
+// Função para lidar com o envio do formulário
+form.onsubmit = function(event) {
+  event.preventDefault(); // Impede o envio do formulário para o servidor
+
+  // Pega os valores dos campos
+  let nome = document.getElementById("nome").value;
+  let email = document.getElementById("email").value;
+  let telefone = document.getElementById("telefone").value;
+  console.log(telefone)
+
+  // Exemplo de como armazenar os dados localmente
+  localStorage.setItem("nome", nome);
+  localStorage.setItem("email", email);
+  localStorage.setItem("telefone", telefone);
+
+  // Fechar o modal após enviar
+  modal.style.display = "none";
+
+  // Exemplo: exibir os dados armazenados no console (apenas para verificação)
+  console.log("Nome:", nome);
+  console.log("Email:", email);
+  console.log("Telefone:", telefone);
+};

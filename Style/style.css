@@ -25,8 +25,8 @@ body {
 }
 
 .cabecalho-titulo {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 25px;
+    /* font-weight: ExtraBold 800; */
     cursor: pointer;
     margin: 0;
     color: #fff;
@@ -40,7 +40,7 @@ body {
 }
 
 .cabecalho-menu-item {
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 12px;
     font-weight: normal;
     font-weight: bold;

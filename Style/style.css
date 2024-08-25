@@ -16,20 +16,24 @@ body {
 
 /* Estilo geral do cabeçalho */
 .cabecalho {
-    width: 100%;
+    width: 45%;
     display: flex;
-    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo dentro do cabeçalho */
     padding: 10px 50px;
     background-color: #9370DB;
     color: #fff;
+    position: absolute; 
+    top: 0; /* Garante que ele fique no topo */
+    left: 50%; /* Inicia o cabeçalho no meio da tela */
+    transform: translateX(-50%); /* Ajusta o início do cabeçalho para centralizar */
 }
 
 .cabecalho-titulo {
     font-size: 25px;
-    /* font-weight: ExtraBold 800; */
     cursor: pointer;
     margin: 0;
     color: #fff;
+    margin-left: -400px;
 }
 
 .cabecalho-menu {
@@ -40,10 +44,10 @@ body {
 }
 
 .cabecalho-menu-item {
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 12px;
     font-weight: normal;
-    font-weight: bold;
+    font-weight:600;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;

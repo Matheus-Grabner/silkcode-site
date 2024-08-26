@@ -65,10 +65,20 @@ body {
     max-width: 1150px;
 }
 
+.conteudo-principal2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4% auto;
+    max-width: 1150px;
+}
+
 .conteudo-principal-subtitulo {
     font-size: 17px;
     font-weight: 400;
     color: rgb(65, 64, 64);
+    margin-top: -20px;
 }
 
 .conteudo-principal-escrito {
@@ -100,6 +110,7 @@ body {
     font-size: 14px;
     color: white;
     cursor: pointer;
+    margin-top: -10px;
 }
 
 .conteudo-principal-imagem {

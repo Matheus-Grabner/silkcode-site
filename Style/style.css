@@ -28,6 +28,11 @@ body {
     margin: 0 auto;
 }
 
+/* .conteudo {
+        background-color: rgb(211, 211, 211, 100);
+
+} */
+
 .cabecalho-titulo {
     font-size: 28px;
     cursor: pointer;

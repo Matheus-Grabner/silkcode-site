@@ -11,137 +11,76 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./Style/style.css" media="screen" />
     <link rel="icon" href="./Imagens/bike.logo.png">
-    <title>Silk Code - Home</title>
+    <title>CODE</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <h1 link="" href="./index.html" class="cabecalho-titulo">CODE</h1>
-        <nav class="cabecalho-menu">
-            <a link="" href="./index.html" class="cabecalho-menu-item">INÍCIO</a>
-            <a link="" href="./como-funciona.html" class="cabecalho-menu-item">COMO FUNCIONA?</a>
-            <a link="" href="./fale-conosco.html" class="cabecalho-menu-item">CONTATO</a>
-        </nav>
-    </header>
+    <div class="top-section">
+        <header class="cabecalho">
+            <h1 link="" href="./index.html" class="cabecalho-titulo">CODE</h1>
+            <nav class="cabecalho-menu">
+                <a link="" href="./index.html" class="cabecalho-menu-item">INÍCIO</a>
+                <a link="" href="./como-funciona.html" class="cabecalho-menu-item">COMO FUNCIONA?</a>
+                <a link="" href="./fale-conosco.html" class="cabecalho-menu-item">CONTATO</a>
+            </nav>
+        </header>
 
-    <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo">Projete sua marca para alcançar milhares de pessoas ao
-                    redor do mundo.</h1>
-                <p class="conteudo-principal-subtitulo">Desenvolvemos sites modernos, rápidos e responsivos, com
-                    <br>design
-                    elegante e personalizado, feitos para <br>impressionar seus clientes<span class="span-cor">.</span>
-                </p>
+        <main class="conteudo">
+            <section class="conteudo-principal">
+                <div class="conteudo-principal-escrito">
+                    <h1 class="conteudo-principal-escrito-titulo">Projete sua marca para alcançar milhares de pessoas ao
+                        redor do mundo.</h1>
+                    <p class="conteudo-principal-subtitulo">Desenvolvemos sites modernos, rápidos e responsivos, com
+                        <br>design
+                        elegante e personalizado, feitos para <br>impressionar seus clientes<span
+                            class="span-cor">.</span>
+                    </p>
 
-                <!-- <ul class="lista-pai">
-                    <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Design personalizado
-                        impressionante, de altíssima qualidade<span class="span-cor">.</span></li>
-                    <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Responsivo em desktop,
-                        tablet e mobile<span class="span-cor">.</span></li>
-                    <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Otimizado para aparecer nos
-                        primeiros lugares do Google<span class="span-cor">.</span></li>
-                    <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Rápido, intuitivo e com
-                        excelente usabilidade<span class="span-cor">.</span></li>
-                    <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Com o melhor preço do
-                        mercado<span class="span-cor">.</span></li>
-                    <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Com as melhores e mais
-                        modernas funcionalidades<span class="span-cor">.</span></li>
+                    <a href="#" id="openModal"><button class="conteudo-principal-escrito-botao"><strong>Faça um
+                                orçamento</strong></button></a>
 
-                </ul> -->
+                    <!-- Lista para preencher -->
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Preencha para entrarmos em contato com você:</h2>
+                            <form id="tabela">
+                                <label for="nome">Digite seu nome:</label>
+                                <input type="text" id="nome" name="nome" required>
 
-                <a href="#" id="openModal"><button class="conteudo-principal-escrito-botao"><strong>Faça um
-                            orçamento</strong></button></a>
+                                <label for="email">Digite seu e-mail:</label>
+                                <input type="email" id="email" name="email" required>
 
+                                <label for="telefone" id="telefone">Digite seu telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" required>
 
-
-                <!-- Lista para preencher -->
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Preencha para entrarmos em contato com você:</h2>
-                        <form id="tabela">
-                            <label for="nome">Digite seu nome:</label>
-                            <input type="text" id="nome" name="nome" required>
-
-                            <label for="email">Digite seu e-mail:</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="telefone" id="telefone">Digite seu telefone:</label>
-                            <input type="tel" id="telefone" name="telefone" required>
-
-                            <button type="submit">Enviar</button>
-                        </form>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
                     </div>
+                    <!--Fim Lista-->
                 </div>
-                <!--Fim Lista-->
 
-            </div>
+                <img class="conteudo-principal-imagem" src="./Imagens/porque.png" alt="">
+            </section>
+        </main>
+    </div>
 
-            <img class="conteudo-principal-imagem" src="./Imagens/porque.png" alt="">
-        </section>
-        <!-- <section class="conteudo-secundario">
-            <h3 class="conteudo-secundario-titulo">Perguntas frequentes<span class="span-cor">:</span></h3>
-            <p class="conteudo-secundario-paragrafo"><strong class="span-cor">Como adquirir um site?</strong> Faça
-                contato conosco via Whatsapp. | <button class="botao-contato">Clique aqui!</button></button></p>
-            <p class="conteudo-secundario-paragrafo"></p>
-            <p class="conteudo-secundario-paragrafo"></p>
-        </section> -->
-    </main>
-
-    <main2 class="conteudo-principal2">
-        <div class="conteudo-principal-escrito">
-            <h1 class="conteudo-principal-escrito-titulo">Projete sua marca para alcançar milhares de pessoas ao
-                redor do mundo.</h1>
-            <p class="conteudo-principal-subtitulo">Desenvolvemos sites modernos, rápidos e responsivos, com
-                <br>design
-                elegante e personalizado, feitos para <br>impressionar seus clientes<span class="span-cor">.</span>
-            </p>
-
-            <!-- <ul class="lista-pai">
-                <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Design personalizado
-                    impressionante, de altíssima qualidade<span class="span-cor">.</span></li>
-                <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Responsivo em desktop,
-                    tablet e mobile<span class="span-cor">.</span></li>
-                <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Otimizado para aparecer nos
-                    primeiros lugares do Google<span class="span-cor">.</span></li>
-                <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Rápido, intuitivo e com
-                    excelente usabilidade<span class="span-cor">.</span></li>
-                <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Com o melhor preço do
-                    mercado<span class="span-cor">.</span></li>
-                <li class="lista-filho"><strong><span class="span-cor">•</span></strong> Com as melhores e mais
-                    modernas funcionalidades<span class="span-cor">.</span></li>
-
-            </ul> -->
-
-            <a href="#" id="openModal"><button class="conteudo-principal-escrito-botao"><strong>Faça um
-                        orçamento</strong></button></a>
-
-
-
-            <!-- Lista para preencher -->
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h2>Preencha para entrarmos em contato com você:</h2>
-                    <form id="tabela">
-                        <label for="nome">Digite seu nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-
-                        <label for="email">Digite seu e-mail:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="telefone" id="telefone">Digite seu telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
-
-                        <button type="submit">Enviar</button>
-                    </form>
+    <div class="bottom-section">
+        <main class="conteudo2">
+            <section class="conteudo-principal2">
+                <div class="conteudo-principal-escrito2">
+                    <h1 class=" ">Projete sua marca para alcançar milhares de pessoas ao
+                        redor do mundo.</h1>
+                    <p class="conteudo-principal-subtitulo">Desenvolvemos sites modernos, rápidos e responsivos, com
+                        <br>design
+                        elegante e personalizado, feitos para <br>impressionar seus clientes<span
+                            class="span-cor">.</span>
+                    </p>
                 </div>
-            </div>
-            <!--Fim Lista-->
-
-        </div>
-    </main2>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="container-footer">
@@ -150,10 +89,8 @@
                 <div class="footer-col">
                     <h4>CODE</h4>
                     <ul>
-                        <!-- <li><a href="#">Quem somos</a></li> -->
                         <li><a href="">nossos serviços </a></li>
                         <li><a href="">política de privacidade </a></li>
-                        <!-- <li><a href="">programa de afiliados</a></li> -->
                     </ul>
                 </div>
                 <!--end footer 1-->
@@ -163,9 +100,6 @@
                     <ul>
                         <li><a href="#">como funciona?</a></li>
                         <li><a href="#">contato</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
                     </ul>
                 </div>
                 <!--end footer 2-->
@@ -173,8 +107,6 @@
                 <div class="footer-col">
                     <h4>Trabalhe Conosco</h4>
                     <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
                         <li><a href="#"></a></li>
                         <li><a href="#"></a></li>
                     </ul>
@@ -189,21 +121,13 @@
                             <button id="buttonFooter">Enviar</button>
                         </form>
                     </div>
-                    <!-- 
-                    <div class="medias-socias">
-                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                        <a href="#"> <i class="fa fa-instagram"></i> </a>
-                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                    </div> -->
-
                 </div>
-                <!--4-->
+                <!--end footer 4-->
             </div>
         </div>
     </footer>
+
     <script src="./JavaScript/script.js"></script>
 </body>
-
 
 </html>

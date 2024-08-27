@@ -27,7 +27,7 @@
 
     .bottom-section {
         background-color: white;
-        height: 65vh;
+        height: 100vh;
         /* 100% da altura da viewport */
     }
 
@@ -108,19 +108,29 @@
         gap: 2rem;
         width: 100%;
         margin-top: -45%;
+        text-align: center;
     }
 
     .conteudo-principal-escrito-titulo {
         font-weight: 650;
         font-size: 3.3rem;
         color: rgb(41, 40, 40);
+        /* word-spacing: -5px; */
+        letter-spacing: -2px;
+        line-height: 70px;
     }
 
-    .conteudo-princiap-escrito-titulo-curto {
+    .conteudo-principal-escrito-titulo-curto {
         text-align: center;
         font-size: 16px;
         font-weight: 700;
         color: rgb(179, 179, 179);
+    }
+
+    .conteudo-principal-subtitulo {
+        margin-top: -18px;
+        font-size: 18.5px;
+        line-height: 26px;
     }
 
     .conteudo-principal-escrito-titulo2 {
@@ -491,4 +501,26 @@
     .close:hover,
     .close:focus {
         color: black;
+    }
+
+    .quadrado {
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        margin: 10px;
+        position: absolute;
+    }
+    
+    .quadrado-imagem {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .quadrado-texto {
+        font-size: 1rem;
+        color: #333;
     }

@@ -27,7 +27,7 @@
 
     .bottom-section {
         background-color: white;
-        height: 100vh;
+        height: 170vh;
         /* 100% da altura da viewport */
     }
 
@@ -92,6 +92,7 @@
         max-width: 1150px;
         height: 700px;
         padding: 0 2%;
+        margin-top: -80px;
     }
 
     /* Estilo para o texto */
@@ -101,7 +102,8 @@
         gap: 2rem;
         width: 100%;
         text-align: center;
-        margin-top: -300px;
+        position: absolute;
+        /* margin-top:20px; */
     }
 
     .conteudo-principal-escrito {
@@ -122,10 +124,11 @@
 
     .conteudo-principal-escrito-titulo-curto {
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
         color: rgb(179, 179, 179);
         margin-top: -200px;
+        margin-bottom: -20px;
     }
 
     .conteudo-principal-subtitulo {
@@ -136,9 +139,11 @@
 
     .conteudo-principal-escrito-titulo2 {
         font-weight: 650;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color: rgb(41, 40, 40);
         margin-bottom: 50px;
+        letter-spacing: -2px;
+        line-height: 70px;
     }
 
     .conteudo-principal-escrito-subtitulo {
@@ -167,70 +172,13 @@
     .conteudo-principal-imagem {
         width: 50%;
         margin: 0;
-        margin-top: -100px;
+        margin-top: 0px;
     }
 
     .conteudo-principal-imagem img {
         max-width: 100%;
         height: auto;
         display: block;
-    }
-
-    .conteudo-secundario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        margin-top: 72px;
-    }
-
-    .conteudo-secundario-titulo {
-        border-top: 0.4px solid #4B0082;
-        padding-top: 48px;
-        font-weight: 400;
-        font-size: 24px;
-        margin-bottom: 16px;
-    }
-
-    .conteudo-principal-paragrafo {
-        font-weight: 300;
-        font-size: 18px;
-    }
-
-    .rodape {
-        padding: 32px;
-        border-top: 0.4px solid #4B0082;
-    }
-
-    .span-cor {
-        color: rgba(147, 112, 219);
-    }
-
-    .lista-pai {
-        margin-left: 18px;
-        font-size: 17px;
-        list-style: none;
-    }
-
-    .lista-filho {
-        margin-top: 18px;
-    }
-
-    .botao-contato {
-        background: rgba(147, 112, 219);
-        width: 85px;
-        height: 25px;
-        border: none;
-        border-radius: 20px;
-        font-weight: 300;
-        font-size: 14px;
-        color: white;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .botao-contato:hover {
-        background-color: rgba(147, 112, 219, 0.8);
     }
 
     footer {
@@ -507,34 +455,47 @@
 
     /* Estilo dos quadrados */
     .quadrado {
-        background-color: rgba(211, 211, 211, 1);
+        background-color: #f9f9f9;
         border: 1px solid #ddd;
-        border-radius: 10px;
+        border-radius: 15px;
         padding: 20px;
-        height: 230px;
+        height: 200px;
         width: 200px;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* Centraliza verticalmente o conteúdo */
         align-items: center;
-        /* Centraliza horizontalmente o conteúdo */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Sombra suave */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Transição suave */
+    }
+
+    .quadrado:hover {
+        background-color: #eaeaea;
+        /* Cor de fundo ao passar o mouse */
+        transform: translateY(-5px);
+        /* Levanta o quadrado ao passar o mouse */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        /* Aumenta a sombra ao passar o mouse */
     }
 
     /* Imagem dentro dos quadrados */
     .quadrado-imagem {
-        margin-bottom: 10px;
-        max-width: 64px;
-        max-height: 64px;
+        margin-bottom: 15px;
+        /* Espaçamento maior abaixo da imagem */
+        max-width: 80px;
+        /* Ajusta o tamanho máximo da imagem */
+        max-height: 80px;
     }
 
     /* Texto dentro dos quadrados */
     .quadrado-texto {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #333;
-        margin-top: 0;
-        /* Remove a margem superior */
+        font-weight: 500;
+        margin-top: 10px;
     }
 
     /* Linha para os quadrados */
@@ -542,25 +503,59 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 18px;
-        max-width: 90%;
-        max-height: 0%;
+        gap: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 350px;
     }
 
-    .quadrado button {
-        background-color: #fff;
-        color: black;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        width: 75%;
-        /* font-weight: bold; */
-        margin-top: 10px;
+    /* Estilos para a história da empresa */
+    .historia-empresa {
+        text-align: center;
+        margin-top: 180px;
+        /* position: relative; */
     }
 
-    .quadrado button:hover {
-        background-color: black;
+    .historia-titulo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: rgb(41, 40, 40);
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    .historia-texto {
+        font-size: 1.25rem;
+        color: rgb(56, 55, 55);
+        /* line-height: 1.6; */
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        /* Adiciona algum padding lateral */
+        letter-spacing: -1px;
+    }
+
+    .historia-imagem {
+        width: 30%;
+    }
+
+    #scrollToTopBtn {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background: rgba(222, 31, 29);
         color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        display: none;
+        /* Oculta o botão inicialmente */
+    }
+
+    #scrollToTopBtn:hover {
+        background-color: rgba(222, 31, 29, 0.8);
     }

@@ -51,3 +51,33 @@ form.onsubmit = function (event) {
   // Fechar o modal após enviar
   modal.style.display = "none";
 };
+
+// Função para rolar suavemente para o topo
+function scrollToTop() {
+  const duration = 800; // Duração da animação em milissegundos
+  const start = window.scrollY;
+  const startTime = performance.now();
+
+  function animateScroll(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1); // Normaliza o progresso
+
+      window.scrollTo(0, start * (1 - progress));
+
+      if (elapsed < duration) {
+          requestAnimationFrame(animateScroll);
+      }
+  }
+
+  requestAnimationFrame(animateScroll);
+}
+
+// Mostrar o botão quando o usuário rolar para baixo
+window.addEventListener('scroll', function() {
+  const button = document.getElementById('scrollToTopBtn');
+  if (window.scrollY > 300) { // Mostra o botão quando rolar mais de 300px
+      button.style.display = 'block';
+  } else {
+      button.style.display = 'none';
+  }
+});

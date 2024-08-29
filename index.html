@@ -1,3 +1,5 @@
+<!-- html -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,74 +7,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./Style/style.css" media="screen" />
     <link rel="icon" href="./Imagens/bike.logo.png">
     <title>CODE</title>
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="container-cabecalho">
-            <h1 class="cabecalho-titulo">SILK CODE</h1>
+    <div class="top-section">
+        <header class="cabecalho">
+            <h1 link="" href="./index.html" class="cabecalho-titulo">SILK CODE</h1>
             <nav class="cabecalho-menu">
-                <a href="./index.html" class="cabecalho-menu-item">INÍCIO</a>
-                <a href="./como-funciona.html" class="cabecalho-menu-item">COMO FUNCIONA?</a>
-                <a href="./fale-conosco.html" class="cabecalho-menu-item">CONTATO</a>
+                <a link="" href="./index.html" class="cabecalho-menu-item">INÍCIO</a>
+                <a link="" href="./como-funciona.html" class="cabecalho-menu-item">COMO FUNCIONA?</a>
+                <a link="" href="./fale-conosco.html" class="cabecalho-menu-item">CONTATO</a>
             </nav>
-        </div>
-    </header>
+        </header>  
 
-    <main>
-        <section class="top-section">
-            <div class="conteudo-principal">
+        <main class="conteudo">
+            <section class="conteudo-principal">    
                 <div class="conteudo-principal-escrito">
                     <h1 class="conteudo-principal-escrito-titulo">Projete sua marca para alcançar milhares de pessoas ao
                         redor do mundo.</h1>
                     <p class="conteudo-principal-subtitulo">Desenvolvemos sites modernos, rápidos e responsivos, com
-                        design elegante e personalizado, feitos para impressionar seus clientes.
+                        <br>design
+                        elegante e personalizado, feitos para <br>impressionar seus clientes
                     </p>
-                    <a href="#" id="openModal">
-                        <button class="conteudo-principal-escrito-botao"><strong>Faça um orçamento</strong></button>
-                    </a>
+
+                    <a href="#" id="openModal"><button class="conteudo-principal-escrito-botao"><strong>Faça um
+                                orçamento</strong></button></a>
+
+                    <!-- Lista para preencher -->
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2>Preencha para entrarmos em contato com você:</h2>
+                            <form id="tabela">
+                                <label for="nome">Digite seu nome:</label>
+                                <input type="text" id="nome" name="nome" required>
+
+                                <label for="email">Digite seu e-mail:</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="telefone" id="telefone">Digite seu telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--Fim Lista-->
                 </div>
                 <img class="conteudo-principal-imagem" src="./Imagens/imgprincipal.png" alt="">
-            </div>
-        </section>
+            </section>
+        </main>
+    </div>
 
-        <section class="bottom-section">
-            <div class="historia-empresa">
+    <div class="bottom-section">
+        <main class="conteudo2">
+            
+            <!-- Seção para a história da empresa -->
+            <section class="historia-empresa">
                 <h1 class="historia-titulo">SILK CODE</h1>
-                <p class="historia-texto">Nossa empresa começou com um sonho simples: fornecer soluções digitais inovadoras para pequenas e médias empresas...</p>
+                <p class="historia-texto">
+                    Nossa empresa começou com um sonho simples: fornecer soluções digitais inovadoras para pequenas e médias empresas. Com uma equipe dedicada e apaixonada pelo que faz, crescemos e evoluímos para nos tornar uma referência no desenvolvimento de websites e soluções tecnológicas.
+                </p>
                 <img class="historia-imagem" src="./Imagens/historia.png" alt="">
-            </div>
-
-            <div class="conteudo-principal2">
+            </section>
+            
+            <section class="conteudo-principal2">
                 <div class="conteudo-principal-escrito2">
                     <h1 class="conteudo-principal-escrito-titulo-curto">NOSSOS SERVIÇOS</h1>
                     <h1 class="conteudo-principal-escrito-titulo2">Soluções excepcionais para impulsionar seu negócio.</h1>
                 </div>
+
                 <div class="quadrados-container">
                     <div class="quadrado">
                         <img src="./Imagens/website.png" alt="Imagem 1" class="quadrado-imagem">
                         <p class="quadrado-texto">Desenvolvimento de Websites</p>
                     </div>
-                    <!-- Outros quadrados -->
+                    <div class="quadrado">
+                        <img src="./Imagens/integração.png" alt="Imagem 2" class="quadrado-imagem">
+                        <p class="quadrado-texto">Integração entre Sistemas</p>
+                    </div>
+                    <div class="quadrado">
+                        <img src="./Imagens/automações.png" alt="Imagem 2" class="quadrado-imagem">
+                        <p class="quadrado-texto">Automações</p>
+                    </div>
+                    <div class="quadrado">
+                        <img src="./Imagens/suporte.png" alt="Imagem 1" class="quadrado-imagem">
+                        <p class="quadrado-texto">Suporte especializado</p>
+                    </div>
+                    <div class="quadrado">
+                        <img src="./Imagens/gerenciamento.png" alt="Imagem 2" class="quadrado-imagem">
+                        <p class="quadrado-texto">Gerenciamento de domínios</p>
+                    </div>
+                    <div class="quadrado">
+                        <img src="./Imagens/automações.png" alt="Imagem 2" class="quadrado-imagem">
+                        <p class="quadrado-texto">Automações</p>
+                    </div>
+                    <div class="quadrado">
+                        <img src="./Imagens/suporte.png" alt="Imagem 1" class="quadrado-imagem">
+                        <p class="quadrado-texto">Suporte especializado</p>
+                    </div>
+                    <div class="quadrado">
+                        <img src="./Imagens/gerenciamento.png" alt="Imagem 2" class="quadrado-imagem">
+                        <p class="quadrado-texto">Gerenciamento de domínios</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+
+        </main>
+    </div>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
 
     <footer>
         <div class="container-footer">
             <div class="row-footer">
+                <!-- footer 1-->
                 <div class="footer-col">
                     <h4>CODE</h4>
                     <ul>
-                        <li><a href="">nossos serviços</a></li>
-                        <li><a href="">política de privacidade</a></li>
+                        <li><a href="">nossos serviços </a></li>
+                        <li><a href="">política de privacidade </a></li>
                     </ul>
                 </div>
-                <!-- Outras colunas do footer -->
+                <!--end footer 1-->
+                <!-- footer 2-->
+                <div class="footer-col">
+                    <h4>Obter ajuda</h4>
+                    <ul>
+                        <li><a href="#">como funciona?</a></li>
+                        <li><a href="#">contato</a></li>
+                    </ul>
+                </div>
+                <!--end footer 2-->
+                <!-- footer 3-->
+                <div class="footer-col">
+                    <h4>Trabalhe Conosco</h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <!--end footer 3-->
+                <!-- footer 4-->
+                <div class="footer-col">
+                    <h4>entramos em contato com você</h4>
+                    <div class="form-sub">
+                        <form>
+                            <input type="email" placeholder="Digite o seu e-mail" required>
+                            <button id="buttonFooter">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <!--end footer 4-->
             </div>
         </div>
     </footer>

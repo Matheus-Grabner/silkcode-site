@@ -329,6 +329,141 @@
         }
     }
 
+    /* Responsivo para dispositivos muito pequenos (320px) */
+    @media (max-width: 320px) {
+
+        /* Ajustes gerais */
+        body {
+            font-size: 14px;
+            /* overflow: hidden; */
+        }
+
+        .top-section {
+            height: 120%;
+        }
+
+        /* Cabeçalho */
+        .cabecalho {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .cabecalho-titulo {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .cabecalho-menu-item {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+
+        .cabecalho-menu {
+            flex-direction: column;
+            display: none;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Conteúdo principal */
+
+        .conteudo {
+            height: 100%;
+        }
+
+        .conteudo-principal {
+            flex-direction: column;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .conteudo-principal-escrito-titulo {
+
+            text-align: center;
+        }
+
+        .conteudo.conteudo-principal-escrito {
+            line-height: 10;
+        }
+
+        .conteudo-principal-subtitulo {
+            font-size: 1rem;
+            line-height: 1.4;
+            text-align: center;
+        }
+
+        .conteudo-principal-escrito-botao {
+            width: 50%;
+            height: 45px;
+            font-size: 12px;
+            margin-top: 20px;
+            margin-left: 25%;
+        }
+
+        .conteudo-principal-imagem {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Seção de serviços */
+        .conteudo-principal2 {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .quadrados-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .quadrado {
+            width: 100%;
+            max-width: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .quadrado-imagem {
+            width: 100%;
+            height: auto;
+        }
+
+        .quadrado-texto {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        .footer-col {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li a {
+            font-size: 14px;
+        }
+
+        .footer-col .form-sub input,
+        .footer-col .form-sub button {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    .conteudo-principal-escrito-titulo {
+        font-weight: 650;
+        font-size: 1.5rem;
+        color: rgb(41, 40, 40);
+        /* word-spacing: -5px; */
+        letter-spacing: -2px;
+        line-height: 70px;
+    }
+
     /* Ajustes para tablets */
     @media (max-width: 768px) {
         .cabecalho {

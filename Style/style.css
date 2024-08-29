@@ -501,57 +501,470 @@
        background-color: rgba(222, 31, 29, 0.8);
    }
 
+   /* Para a barra de rolagem em navegadores baseados em Webkit */
+   ::-webkit-scrollbar {
+       width: 8px;
+       /* Largura da barra de rolagem */
+       height: 8px;
+       /* Altura da barra de rolagem horizontal */
+   }
 
+   ::-webkit-scrollbar-thumb {
+       background-color: rgba(0, 0, 0, 0.2);
+       /* Cor da parte deslizante da barra */
+       border-radius: 10px;
+       /* Bordas arredondadas */
+   }
 
+   ::-webkit-scrollbar-track {
+       background-color: rgba(0, 0, 0, 0.1);
+       /* Cor do trilho da barra de rolagem */
+       border-radius: 10px;
+       /* Bordas arredondadas */
+   }
 
+   /* Responsivo para dispositivos muito pequenos (320px) */
+   @media (max-width: 1024px) {
 
+       body {
+           font-size: 20px;
+       }
 
-   /* Responsivo para dispositivos muito pequenos (extra pequeno) */
-   /* @media (max-width: 480px) {
+       .top-section,
+       .bottom-section,
+       .conteudo,
+       .conteudo2 {
+           height: 100%;
+           width: 100%;
+       }
+
        .cabecalho {
-           flex-direction: column;
-           padding: 10px 2%;
+           flex-direction: row;
+           text-align: center;
+       }
+
+       .cabecalho-titulo {
+           font-size: 2.2rem;
+           margin-top: 20px;
        }
 
        .cabecalho-menu-item {
-           font-size: 14px;
+           font-size: 18px;
+           padding: 12px 20px;
+           display: block;
+       }
+
+       .cabecalho-menu {
+           flex-direction: row;
+           display: flex;
+           width: 100%;
+           text-align: center;
+           margin-top: 20px;
+       }
+
+       .conteudo-principal {
+           flex-direction: row;
+           padding: 0;
+           margin-top: 35px;
+           width: 600px;
+       }
+
+       .conteudo-principal2 {
+           flex-direction: row;
+           padding: 0;
+           margin-top: 400px;
        }
 
        .conteudo-principal-escrito-titulo {
-           font-size: 1.375rem;
-           padding: 10px;
+           text-align: center;
+           font-size: 32px;
+           margin-top: 5%;
+           line-height: 2.5rem;
        }
 
-       .conteudo-principal-escrito-subtitulo {
-           font-size: 1rem;
+       .conteudo-principal-escrito-titulo2 {
+           text-align: center;
+           font-size: 32px;
+           margin-left: 10px;
+           margin-right: 10px;
+       }
+
+       .conteudo-principal-escrito-botao {
+           width: 80%;
+           height: 55px;
+           font-size: 18px;
+           margin-top: 35px;
+           margin-left: 10%;
        }
 
        .conteudo-principal-imagem {
-           width: 100%;
-           margin-top: 10px;
+           display: block;
        }
 
-       .footer-col ul li a {
-           font-size: 0.875rem;
-           padding: 5px 0;
+       #openModal {
+           margin-top: -20px;
+       }
+
+       .conteudo-principal-escrito2 {
+           margin-top: -1000px;
+       }
+
+       .historia-imagem {
+           width: 70%;
+           height: auto;
+           margin-top: 15px;
+       }
+
+       .historia-texto {
+           font-size: 1.3rem;
+           margin-top: 35px;
+       }
+
+       .historia-empresa {
+           margin-top: 35px;
+       }
+
+       .quadrados-container {
+           margin-top: 100px;
+       }
+
+       .quadrado {
+           max-width: 250px;
+           margin: 25px;
+       }
+
+       .quadrado-imagem {
+           width: 100%;
+       }
+
+       .quadrado-texto {
+           font-size: 20px;
        }
 
        .footer-col {
            width: 100%;
+           text-align: center;
+           margin-bottom: 35px;
        }
-   } */
 
-   /* Responsivo para dispositivos muito pequenos (320px) */
+       .footer-col ul li a {
+           font-size: 18px;
+       }
+
+       .footer-col .form-sub input,
+       .footer-col .form-sub button {
+           width: 100%;
+           margin-top: 20px;
+       }
+
+       .container-footer {
+           display: block;
+       }
+
+       footer {
+           display: block;
+       }
+   }
+
+   @media (max-width: 768px) {
+
+       body {
+           font-size: 18px;
+       }
+
+       .top-section,
+       .bottom-section,
+       .conteudo,
+       .conteudo2 {
+           height: 100%;
+           width: 100%;
+       }
+
+       .cabecalho {
+           flex-direction: column;
+           text-align: center;
+       }
+
+       .cabecalho-titulo {
+           font-size: 2rem;
+           margin-top: 15px;
+       }
+
+       .cabecalho-menu-item {
+           font-size: 16px;
+           padding: 10px 15px;
+           display: block;
+       }
+
+       .cabecalho-menu {
+           flex-direction: column;
+           display: flex;
+           width: 100%;
+           text-align: center;
+           margin-top: 15px;
+       }
+
+       .conteudo-principal {
+           flex-direction: column;
+           padding: 0;
+           margin-top: 30px;
+           width: 400px;
+       }
+
+       .conteudo-principal2 {
+           flex-direction: column;
+           padding: 0;
+           margin-top: 500px;
+       }
+
+       .conteudo-principal-escrito-titulo {
+           text-align: center;
+           font-size: 30px;
+           margin-top: 10%;
+           line-height: 2.5rem;
+       }
+
+       .conteudo-principal-escrito-titulo2 {
+           text-align: center;
+           font-size: 30px;
+           margin-left: 15px;
+           margin-right: 15px;
+       }
+
+       .conteudo-principal-escrito-botao {
+           width: 70%;
+           height: 50px;
+           font-size: 16px;
+           margin-top: 30px;
+           margin-left: 15%;
+       }
+
+       .conteudo-principal-imagem {
+           display: block;
+       }
+
+       #openModal {
+           margin-top: -30px;
+       }
+
+       .conteudo-principal-escrito2 {
+           margin-top: -1200px;
+       }
+
+       .historia-imagem {
+           width: 75%;
+           height: auto;
+           margin-top: 20px;
+       }
+
+       .historia-texto {
+           font-size: 1.2rem;
+           margin-top: 40px;
+       }
+
+       .historia-empresa {
+           margin-top: 40px;
+       }
+
+       .quadrados-container {
+           margin-top: 150px;
+       }
+
+       .quadrado {
+           max-width: 200px;
+           margin: 20px;
+       }
+
+       .quadrado-imagem {
+           width: 100%;
+       }
+
+       .quadrado-texto {
+           font-size: 18px;
+       }
+
+       .footer-col {
+           width: 100%;
+           text-align: center;
+           margin-bottom: 30px;
+       }
+
+       .footer-col ul li a {
+           font-size: 16px;
+       }
+
+       .footer-col .form-sub input,
+       .footer-col .form-sub button {
+           width: 100%;
+           margin-top: 15px;
+       }
+
+       .container-footer {
+           display: block;
+       }
+
+       footer {
+           display: block;
+       }
+   }
+
+   @media (max-width: 480px) {
+
+       body {
+           font-size: 16px;
+       }
+
+       .top-section,
+       .bottom-section,
+       .conteudo,
+       .conteudo2 {
+           height: 100%;
+           width: 100%;
+       }
+
+       .cabecalho {
+           flex-direction: column;
+           text-align: center;
+       }
+
+       .cabecalho-titulo {
+           font-size: 1.8rem;
+           margin-top: 10px;
+       }
+
+       .cabecalho-menu-item {
+           font-size: 14px;
+           padding: 8px 12px;
+           display: none;
+       }
+
+       .cabecalho-menu {
+           flex-direction: column;
+           display: none;
+           width: 100%;
+           text-align: center;
+           margin-top: 12px;
+       }
+
+       .conteudo-principal {
+           flex-direction: column;
+           padding: 0;
+           margin-top: 25px;
+           width: 300px;
+       }
+
+       .conteudo-principal2 {
+           flex-direction: column;
+           padding: 0;
+           margin-top: 600px;
+       }
+
+       .conteudo-principal-escrito-titulo {
+           text-align: center;
+           font-size: 28px;
+           margin-top: 15%;
+           line-height: 2.5rem;
+       }
+
+       .conteudo-principal-escrito-titulo2 {
+           text-align: center;
+           font-size: 28px;
+           margin-left: 20px;
+           margin-right: 20px;
+       }
+
+       .conteudo-principal-escrito-botao {
+           width: 60%;
+           height: 45px;
+           font-size: 14px;
+           margin-top: 25px;
+           margin-left: 20%;
+       }
+
+       .conteudo-principal-imagem {
+           display: none;
+       }
+
+       #openModal {
+           margin-top: -40px;
+       }
+
+       .conteudo-principal-escrito2 {
+           margin-top: -1500px;
+       }
+
+       .historia-imagem {
+           width: 80%;
+           height: auto;
+           margin-top: 25px;
+       }
+
+       .historia-texto {
+           font-size: 1.1rem;
+           margin-top: 45px;
+       }
+
+       .historia-empresa {
+           margin-top: 45px;
+       }
+
+       .quadrados-container {
+           margin-top: 180px;
+       }
+
+       .quadrado {
+           max-width: 180px;
+           margin: 15px;
+       }
+
+       .quadrado-imagem {
+           width: 100%;
+       }
+
+       .quadrado-texto {
+           font-size: 16px;
+       }
+
+       .footer-col {
+           width: 100%;
+           text-align: center;
+           margin-bottom: 25px;
+       }
+
+       .footer-col ul li a {
+           font-size: 14px;
+       }
+
+       .footer-col .form-sub input,
+       .footer-col .form-sub button {
+           width: 100%;
+           margin-top: 12px;
+       }
+
+       .container-footer {
+           display: block;
+       }
+
+       footer {
+           display: block;
+       }
+   }
+
    @media (max-width: 320px) {
 
        /* Ajustes gerais */
        body {
            font-size: 14px;
-           /* overflow: hidden; */
        }
 
        .top-section {
-           height: 120%;
+           height: 100%;
+           width: 100%;
+       }
+
+       .bottom-section {
+           height: 100%;
+           width: 100%;
        }
 
        /* Cabeçalho */
@@ -562,12 +975,15 @@
 
        .cabecalho-titulo {
            font-size: 1.5rem;
-           margin-top: 15px;
+           align-items: center;
+           margin-top: 8px;
+           overflow-x: hidden;
        }
 
        .cabecalho-menu-item {
            font-size: 12px;
            padding: 5px 10px;
+           display: none;
        }
 
        .cabecalho-menu {
@@ -581,17 +997,42 @@
        /* Conteúdo principal */
        .conteudo {
            height: 100%;
+           width: 100%;
+       }
+
+       .conteudo2 {
+           height: 100%;
+           width: 100%;
        }
 
        .conteudo-principal {
            flex-direction: column;
            padding: 0;
            margin-top: 20px;
+           width: 280px;
+       }
+
+       /* Seção de serviços */
+       .conteudo-principal2 {
+           flex-direction: column;
+           padding: 0;
+           margin-top: 800px;
        }
 
        .conteudo-principal-escrito-titulo {
            text-align: center;
-           font-size: 10px;
+           font-size: 26px;
+           margin-top: 20%;
+           line-height: 2.5rem;
+           overflow-x: hidden;
+       }
+
+       .conteudo-principal-escrito-titulo2 {
+           text-align: center;
+           font-size: 26px;
+           line-height: 2.5rem;
+           margin-left: 25px;
+           margin-right: 25px;
        }
 
        .conteudo-principal-escrito {
@@ -600,8 +1041,12 @@
 
        .conteudo-principal-subtitulo {
            font-size: 1rem;
-           line-height: 1.4;
+           font-weight: 500;
+           line-height: 1.6;
            text-align: center;
+           margin-top: 5px;
+           overflow-x: hidden;
+
        }
 
        .conteudo-principal-escrito-botao {
@@ -613,22 +1058,46 @@
        }
 
        .conteudo-principal-imagem {
-           width: 100%;
-           margin-top: 20px;
+           display: none;
        }
 
-       /* Seção de serviços */
-       .conteudo-principal2 {
-           flex-direction: column;
+       #openModal {
+           margin-top: -50px;
            align-items: center;
-           padding: 0;
-           margin-top: 20px;
+       }
+
+       .conteudo-principal-escrito2 {
+           margin-top: -1750px;
+       }
+
+       .conteudo-principal-escrito-titulo-curto {
+           text-align: center;
+           font-size: 0.9rem;
+           line-height: 2.5rem;
+       }
+
+       .historia-imagem {
+           width: 80%;
+           height: 80%;
+           margin-top: 30px;
+       }
+
+       .historia-texto {
+           font-size: 1rem;
+           font-weight: 500;
+           line-height: 1.6;
+           margin-top: 50px;
+       }
+
+       .historia-empresa {
+           margin-top: 50px;
        }
 
        .quadrados-container {
            display: flex;
            flex-wrap: wrap;
            justify-content: center;
+           margin-top: 200px;
        }
 
        .quadrado {
@@ -650,52 +1119,34 @@
 
        /* Footer */
        .footer-col {
+           display: none;
            width: 100%;
            text-align: center;
            margin-bottom: 20px;
+           overflow-x: hidden;
        }
 
        .footer-col ul li a {
-           font-size: 14px;
+           display: none;
+
+           font-size: 12px;
+           overflow-x: hidden;
        }
 
        .footer-col .form-sub input,
        .footer-col .form-sub button {
+           display: none;
+
            width: 100%;
            margin-top: 10px;
+           overflow-x: hidden;
+       }
+
+       .container-footer {
+           display: none;
+       }
+
+       footer {
+           display: none;
        }
    }
-
-   /* Ajustes para tablets */
-   /* @media (max-width: 768px) {
-    .cabecalho {
-        padding: 10px 2%;
-    }
-
-    .conteudo-principal {
-        flex-direction: column;
-        padding: 0 2%;
-    }
-
-    .conteudo-principal-imagem {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .footer-col {
-        width: 50%;
-        padding: 0 10px;
-    }
-} */
-
-   /* Ajustes para desktops grandes */
-   /* @media (min-width: 1200px) {
-
-.conteudo-principal-escrito-titulo {
-    font-weight: 650;
-    font-size: 3.5rem;
-    color: rgb(41, 40, 40);
-     word-spacing: -5px; 
-    letter-spacing: -2px;
-    line-height: 70px;
-}*/

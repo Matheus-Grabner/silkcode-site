@@ -524,287 +524,268 @@
    }
 
    /* Responsivo para dispositivos muito pequenos (320px) */
-   @media (max-width: 1024px) {
 
-       body {
-           font-size: 20px;
-       }
-
-       .top-section,
-       .bottom-section,
-       .conteudo,
-       .conteudo2 {
+   @media (max-width: 2560px) {
+       .bottom-section {
            height: 100%;
-           width: 100%;
-       }
-
-       .cabecalho {
-           flex-direction: row;
-           text-align: center;
-       }
-
-       .cabecalho-titulo {
-           font-size: 2.2rem;
-           margin-top: 20px;
-       }
-
-       .cabecalho-menu-item {
-           font-size: 18px;
-           padding: 12px 20px;
-           display: block;
-       }
-
-       .cabecalho-menu {
-           flex-direction: row;
-           display: flex;
-           width: 100%;
-           text-align: center;
-           margin-top: 20px;
-       }
-
-       .conteudo-principal {
-           flex-direction: row;
-           padding: 0;
-           margin-top: 35px;
-           width: 600px;
-       }
-
-       .conteudo-principal2 {
-           flex-direction: row;
-           padding: 0;
-           margin-top: 400px;
-       }
-
-       .conteudo-principal-escrito-titulo {
-           text-align: center;
-           font-size: 32px;
-           margin-top: 5%;
-           line-height: 2.5rem;
-       }
-
-       .conteudo-principal-escrito-titulo2 {
-           text-align: center;
-           font-size: 32px;
-           margin-left: 10px;
-           margin-right: 10px;
-       }
-
-       .conteudo-principal-escrito-botao {
-           width: 80%;
-           height: 55px;
-           font-size: 18px;
-           margin-top: 35px;
-           margin-left: 10%;
-       }
-
-       .conteudo-principal-imagem {
-           display: block;
-       }
-
-       #openModal {
-           margin-top: -20px;
-       }
-
-       .conteudo-principal-escrito2 {
-           margin-top: -1000px;
-       }
-
-       .historia-imagem {
-           width: 70%;
-           height: auto;
-           margin-top: 15px;
-       }
-
-       .historia-texto {
-           font-size: 1.3rem;
-           margin-top: 35px;
-       }
-
-       .historia-empresa {
-           margin-top: 35px;
-       }
-
-       .quadrados-container {
-           margin-top: 100px;
-       }
-
-       .quadrado {
-           max-width: 250px;
-           margin: 25px;
-       }
-
-       .quadrado-imagem {
-           width: 100%;
-       }
-
-       .quadrado-texto {
-           font-size: 20px;
-       }
-
-       .footer-col {
-           width: 100%;
-           text-align: center;
-           margin-bottom: 35px;
-       }
-
-       .footer-col ul li a {
-           font-size: 18px;
-       }
-
-       .footer-col .form-sub input,
-       .footer-col .form-sub button {
-           width: 100%;
-           margin-top: 20px;
-       }
-
-       .container-footer {
-           display: block;
        }
 
        footer {
-           display: block;
+        margin-top: 33%;
        }
+
+       .conteudo-principal-escrito {
+        margin-top: 140px;
+       }
+
+       .conteudo-principal-imagem {
+        margin-top: 140px;
+       }
+   }
+
+   @media (max-width: 1440px) {
+
+       .top-section {
+           height: 130%;
+       }
+
+       .bottom-section {
+           height: 205%;
+       }
+
+       /* .conteudo-principal2 {
+        height: ;
+       } */
+
+       .conteudo-principal-escrito-titulo {
+           margin-top: -420px;
+           font-size: 3rem;
+       }
+
+       .conteudo-principal-subtitulo {
+           font-size: 1rem;
+       }
+
+       .conteudo-principal-imagem {
+           margin-top: -33%;
+       }
+   }
+
+   @media (max-width: 1024px) {
+
+       .top-section {
+           height: 130%;
+       }
+
+       .bottom-section {
+           height: 200%;
+       }
+
+       .conteudo-principal-escrito-titulo {
+           margin-top: -420px;
+           font-size: 3rem;
+       }
+
+       .conteudo-principal-subtitulo {
+           font-size: 1rem;
+       }
+
+       .conteudo-principal-imagem {
+           margin-top: -45%;
+       }
+
    }
 
    @media (max-width: 768px) {
 
+       /* Ajustes gerais */
        body {
-           font-size: 18px;
+           font-size: 14px;
        }
 
-       .top-section,
-       .bottom-section,
-       .conteudo,
-       .conteudo2 {
+       .top-section {
            height: 100%;
            width: 100%;
        }
 
+       .bottom-section {
+           height: 80%;
+           width: 100%;
+       }
+
+       /* Cabeçalho */
        .cabecalho {
            flex-direction: column;
            text-align: center;
        }
 
        .cabecalho-titulo {
-           font-size: 2rem;
-           margin-top: 15px;
+           font-size: 1.5rem;
+           align-items: center;
+           margin-top: 8px;
+           overflow-x: hidden;
        }
 
        .cabecalho-menu-item {
-           font-size: 16px;
-           padding: 10px 15px;
-           display: block;
+           font-size: 12px;
+           padding: 5px 10px;
+           display: none;
        }
 
        .cabecalho-menu {
            flex-direction: column;
-           display: flex;
+           display: none;
            width: 100%;
            text-align: center;
-           margin-top: 15px;
+           margin-top: 10px;
+       }
+
+       /* Conteúdo principal */
+       .conteudo {
+           height: 100%;
+           width: 100%;
+       }
+
+       .conteudo2 {
+           height: 100%;
+           width: 100%;
        }
 
        .conteudo-principal {
            flex-direction: column;
            padding: 0;
-           margin-top: 30px;
-           width: 400px;
+           margin-top: 20px;
+           width: 280px;
        }
 
+       /* Seção de serviços */
        .conteudo-principal2 {
            flex-direction: column;
            padding: 0;
-           margin-top: 500px;
+           margin-top: 800px;
        }
 
        .conteudo-principal-escrito-titulo {
            text-align: center;
-           font-size: 30px;
-           margin-top: 10%;
+           font-size: 26px;
+           margin-top: 20%;
            line-height: 2.5rem;
+           overflow-x: hidden;
        }
 
        .conteudo-principal-escrito-titulo2 {
            text-align: center;
-           font-size: 30px;
-           margin-left: 15px;
-           margin-right: 15px;
+           font-size: 26px;
+           line-height: 2.5rem;
+           margin-left: 25px;
+           margin-right: 25px;
        }
 
-       .conteudo-principal-escrito-botao {
-           width: 70%;
-           height: 50px;
-           font-size: 16px;
-           margin-top: 30px;
-           margin-left: 15%;
-       }
-
-       .conteudo-principal-imagem {
-           display: block;
-       }
-
-       #openModal {
-           margin-top: -30px;
+       .conteudo-principal-escrito {
+           line-height: 10;
        }
 
        .conteudo-principal-escrito2 {
-           margin-top: -1200px;
+           margin-top: -1750px;
+       }
+
+       .conteudo-principal-subtitulo {
+           font-size: 1rem;
+           font-weight: 500;
+           line-height: 1.6;
+           text-align: center;
+           margin-top: 5px;
+           overflow-x: hidden;
+
+       }
+
+       .conteudo-principal-escrito-botao {
+           width: 50%;
+           height: 45px;
+           font-size: 12px;
+           margin-top: 20px;
+           margin-left: 25%;
+       }
+
+       .conteudo-principal-imagem {
+           display: none;
+       }
+
+       #openModal {
+           margin-top: -50px;
+           align-items: center;
+       }
+
+       .conteudo-principal-escrito-titulo-curto {
+           text-align: center;
+           font-size: 0.9rem;
+           line-height: 2.5rem;
        }
 
        .historia-imagem {
-           width: 75%;
-           height: auto;
-           margin-top: 20px;
+           width: 80%;
+           height: 80%;
+           margin-top: 30px;
        }
 
        .historia-texto {
-           font-size: 1.2rem;
-           margin-top: 40px;
+           font-size: 1rem;
+           font-weight: 500;
+           line-height: 1.6;
+           margin-top: 50px;
        }
 
        .historia-empresa {
-           margin-top: 40px;
+           margin-top: 50px;
        }
 
        .quadrados-container {
-           margin-top: 150px;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           margin-top: -1100px;
        }
 
        .quadrado {
-           max-width: 200px;
-           margin: 20px;
+           width: 100%;
+           max-width: 150px;
+           margin: 10px;
+           text-align: center;
        }
 
        .quadrado-imagem {
            width: 100%;
+           height: auto;
        }
 
        .quadrado-texto {
-           font-size: 18px;
+           font-size: 14px;
+           margin-top: 5px;
        }
 
+       /* Footer */
        .footer-col {
+           /* display: none; */
            width: 100%;
            text-align: center;
-           margin-bottom: 30px;
+           margin-bottom: 20px;
+           overflow-x: hidden;
        }
 
        .footer-col ul li a {
-           font-size: 16px;
+           font-size: 12px;
+           overflow-x: hidden;
        }
 
        .footer-col .form-sub input,
        .footer-col .form-sub button {
            width: 100%;
-           margin-top: 15px;
-       }
-
-       .container-footer {
-           display: block;
+           margin-top: 10px;
+           overflow-x: hidden;
        }
 
        footer {
-           display: block;
+           margin-top: 1400px;
        }
    }
 
@@ -955,7 +936,7 @@
            display: flex;
            flex-wrap: wrap;
            justify-content: center;
-           margin-top: 200px;
+           margin-top: -800px;
        }
 
        .quadrado {
@@ -977,15 +958,18 @@
 
        /* Footer */
        .footer-col {
-           display: none;
+           /* display: none; */
            width: 100%;
            text-align: center;
            margin-bottom: 20px;
            overflow-x: hidden;
        }
 
-       .footer-col ul li a {
+       .remover-elemento {
            display: none;
+       }
+
+       .footer-col ul li a {
 
            font-size: 12px;
            overflow-x: hidden;
@@ -993,18 +977,16 @@
 
        .footer-col .form-sub input,
        .footer-col .form-sub button {
-           display: none;
-
            width: 100%;
            margin-top: 10px;
            overflow-x: hidden;
        }
 
-       .container-footer {
-           display: none;
+       footer {
+           margin-top: 1300px;
        }
 
-       footer {
+       .form-sub {
            display: none;
        }
    }

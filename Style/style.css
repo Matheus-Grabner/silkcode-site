@@ -45,6 +45,11 @@
        margin: 0 auto;
    }
 
+   .cabecalho-logo {
+    width: 21.5%;
+    margin-left: -60px;
+   }
+
    .cabecalho-titulo {
        font-size: 2rem;
        color: rgb(41, 40, 40);
